@@ -1,12 +1,15 @@
 // import { useState } from 'react'
-import './App.css'
 
-function App() {
+import React from 'react'
+import Nav from './components/Nav'
+import Home from './components/Home'
 
+const App: React.FC = () => {
   return (
-    <div>
-    <h1 className="text-3xl font-bold underline">    Hello world!  </h1>
-    </div>
+<div className='w-full min-h-screen'>
+<Nav/>
+<Home/>
+</div>
   )
 }
 
