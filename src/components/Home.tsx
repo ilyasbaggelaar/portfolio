@@ -1,4 +1,6 @@
 import React from "react";
+import ncNewsImg from "../assets/Images/ncnews.png"
+import LawvelyImg from "../assets/Images/Law-vely.png"
 
 const Home: React.FC = () => {
   return (
@@ -22,15 +24,17 @@ const Home: React.FC = () => {
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
         <div className="flex justify-center gap-6 mt-8">
           <div className="bg-green-500 p-4 rounded-lg w-64">
+            <img src={LawvelyImg} className="h-[120px] rounded-b-[] w-full"/>
             <h3 className="font-bold">Law-vely</h3>
             <p>Simplifying legislations through OpenAI's API</p>
           </div>
           <div className="bg-purple-400 p-4 rounded-lg w-64">
+            <img src={ncNewsImg} className="h-[120px]" />
             <h3 className="font-bold">NC-News Front-end</h3>
             <p>A news web app that provides user interactivity</p>
           </div>
           <div className="bg-blue-400 p-4 rounded-lg w-64">
-            <img src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png"/>
+            <img src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png" className="h-[120px] rounded-b-none w-full" />
             <h3 className="font-bold">NC-News Back-end</h3>
             <p>A fully functional back-end API created from scratch</p>
           </div>
