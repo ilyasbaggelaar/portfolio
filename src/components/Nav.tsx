@@ -14,26 +14,26 @@ const Nav: React.FC = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full px-8 py-4 flex items-center justify-between z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full px-10 py-5 flex items-center justify-between z-50 transition-all duration-300 ${
           scrolled ? "bg-green-500 text-white shadow-lg" : "bg-transparent"
         }`}
       >
-        <div className="text-lg font-bold border-2 border-black px-2 py-1">
+        <div className="text-4xl font-bold border-2 border-black px-2 py-1">
           IB
         </div>
-        <div className="flex space-x-10">
-          {["Projects", "Extras", "Media"].map((item) => (
+        <div className="flex items-center space-x-22">
+          {["Featured Work", "Tech Stack", "Media"].map((item) => (
             <a
               key={item}
               href="#"
-              className="relative font-semibold text-black transition-all hover:text-green-500"
+              className="text-3xl relative left-16 font-semibold text-black transition-all hover:text-green-500"
             >
               {item}
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className=" text-4xl absolute left-0 bottom-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
-        <button className="border-2 border-black px-4 py-1 rounded-lg hover:bg-black hover:text-white transition">
+        <button className="text-4xl border-2 border-black px-3 py-1 rounded-lg hover:bg-black hover:text-white transition">
           Contact Me
         </button>
       </nav>
