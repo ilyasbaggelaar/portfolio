@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
             <a
               key={item}
               href="#"
-              className="text-3xl relative left-16 font-semibold text-black transition-all hover:text-green-500"
+              className="text-3xl relative left-10 font-semibold text-black transition-all hover:text-green-500"
             >
               {item}
               <span className=" text-4xl absolute left-0 bottom-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
