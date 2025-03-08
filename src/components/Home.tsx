@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <section className="bg-gray-900 text-white py-12">
+      <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
         <div className="flex justify-center gap-6 mt-8">
           <div className="bg-green-500 p-4 rounded-lg w-64">
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* My Projects - Full Width */}
-      <section className="w-full py-12 bg-gray-200">
+      <section id="tech-stack" className="w-full py-12 bg-gray-200">
         <h2 className="text-center text-4xl font-bold mb-8">Tech stack</h2>
         <div className="flex justify-center">
   <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-13 gap-6 mx-auto">
