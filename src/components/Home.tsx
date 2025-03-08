@@ -1,11 +1,12 @@
 import React from "react";
 import ncNewsImg from "../assets/Images/ncnews.png"
 import LawvelyImg from "../assets/Images/Law-vely.png"
+import profilePictureImage from "../assets/Images/d396b836-6d3e-4b43-887b-47c0e66ad476.jpeg"
 
 const techStack = [
   { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: "Tailwind", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
   { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
@@ -23,9 +24,9 @@ const Home: React.FC = () => {
     <div className="w-full">
       <div className="max-w-full h-screen flex flex-col justify-center items-center bg-gray-200">
         <img
-          src="https://media.licdn.com/dms/image/v2/D4E35AQEEIwbVfHMcJA/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1738593775769?e=1741708800&v=beta&t=VkFEHV88rhY3Zm86yYOS5ujBP6DmDix-Dhh-2ttR17Q"
+          src={profilePictureImage}
           alt="Profile"
-          className="w-85 h-85 rounded-full border-4 border-black shadow-lg"
+          className="w-85 h-85 rounded-full border-4 border-black shadow-lg object-cover object-top"
         />
         <div className="max-w-240">
         <h1 className="text-5xl font-bold mt-4 text-center line-clamp-5">
@@ -60,16 +61,14 @@ const Home: React.FC = () => {
       <section className="w-full py-12 bg-gray-200">
         <h2 className="text-center text-4xl font-bold mb-8">Tech stack</h2>
         <div className="flex justify-center">
-
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-15 gap-6 justify-center">
-          {techStack.map((tech) => (
-            <div key={tech.name} className="w-24 h-24 flex justify-center items-center bg-white shadow-lg rounded-lg">
-              <img src={tech.icon} alt={tech.name} className="w-16 h-16 object-contain"/>
-            </div>
-          ))}
-        </div>
-
-        </div>
+  <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-13 gap-6 mx-auto">
+    {techStack.map((tech) => (
+      <div key={tech.name} className="w-24 h-24 flex justify-center items-center bg-white shadow-lg rounded-lg">
+        <img src={tech.icon} alt={tech.name} className="w-16 h-16 object-contain"/>
+      </div>
+    ))}
+  </div>
+</div>
 
       </section>
     </div>
