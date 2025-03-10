@@ -61,7 +61,7 @@ const techStack = [
 const Home: React.FC = () => {
   return (
     <div className="w-full">
-      <section id="homePageProfile">
+      <section id="home">
         <div className="max-w-full h-screen flex flex-col justify-center items-center bg-gray-200">
           <img
             src={profilePictureImage}

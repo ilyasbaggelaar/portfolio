@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
           scrolled ? "bg-green-500 text-white shadow-lg" : "bg-transparent"
         }`}
       >
-        <a href="#homePageProfile">
+        <a href="#home">
         <div className="text-4xl font-bold border-2 border-black px-2 py-1 mr-10">
           IB
         </div>
