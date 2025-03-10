@@ -27,7 +27,6 @@ const Nav: React.FC = () => {
           {[
             {name: "Featured Work", link: "#featured-work" },
             {name: "Tech Stack", link: "#tech-stack"},
-            {name: "Media", link: "#media"},
           ].map((item) => (
             <a
               key={item.name}
