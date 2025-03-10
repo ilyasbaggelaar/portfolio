@@ -61,51 +61,51 @@ const techStack = [
 const Home: React.FC = () => {
   return (
     <div className="w-full">
-      <div className="max-w-full h-screen flex flex-col justify-center items-center bg-gray-200">
-        <img
-          src={profilePictureImage}
-          alt="Profile"
-          className="w-85 h-85 rounded-full border-4 border-black shadow-lg object-cover object-top"
-        />
-        <div className="max-w-240">
-          <h1 className="text-5xl font-bold mt-4 text-center line-clamp-5">
-            Hey, I'm <span className="text-green-500">Ilyas Baggelaar</span>.
-            Here, you can check out what I'm working on. I try my best to create
-            things with ❤️
-          </h1>
+      <section id="homePageProfile">
+        <div className="max-w-full h-screen flex flex-col justify-center items-center bg-gray-200">
+          <img
+            src={profilePictureImage}
+            alt="profile"
+            className="w-85 h-85 rounded-full border-4 border-black shadow-lg object-cover object-top"
+          />
+          <div className="max-w-240">
+            <h1 className="text-5xl font-bold mt-4 text-center line-clamp-5">
+              Hey, I'm <span className="text-green-500">Ilyas Baggelaar</span>.
+              Here, you can check out what I'm working on. I try my best to
+              create things with ❤️
+            </h1>
+          </div>
         </div>
-      </div>
-
+      </section>
       <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
         <div className="flex justify-center gap-6 mt-8">
           <div className="bg-green-500 p-4 rounded-lg w-64">
-          <a href="https://law-vely.netlify.app/">
-            <img src={LawvelyImg} className="h-[120px] rounded-b-[] w-full" />
-            <h3 className="font-bold">Law-vely</h3>
-            <p>Simplifying legislations through OpenAI's API</p>
+            <a href="https://law-vely.netlify.app/">
+              <img src={LawvelyImg} className="h-[120px] rounded-b-[] w-full" />
+              <h3 className="font-bold">Law-vely</h3>
+              <p>Simplifying legislations through OpenAI's API</p>
             </a>
           </div>
 
           <div className="bg-purple-400 p-4 rounded-lg w-64">
             <a href="https://preeminent-rolypoly-17b3b1.netlify.app/">
-            <img src={ncNewsImg} className="h-[120px]" />
-            <h3 className="font-bold">NC-News Front-end</h3>
-            <p>A news web app that provides user interactivity</p>
+              <img src={ncNewsImg} className="h-[120px]" />
+              <h3 className="font-bold">NC-News Front-end</h3>
+              <p>A news web app that provides user interactivity</p>
             </a>
           </div>
 
           <div className="bg-blue-400 p-4 rounded-lg w-64">
             <a href="https://nc-news-f67l.onrender.com/api/articles">
-            <img
-              src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png"
-              className="h-[120px] rounded-b-none w-full"
-            />
-            <h3 className="font-bold">NC-News Back-end</h3>
-            <p>A fully functional back-end API created from scratch</p>
+              <img
+                src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png"
+                className="h-[120px] rounded-b-none w-full"
+              />
+              <h3 className="font-bold">NC-News Back-end</h3>
+              <p>A fully functional back-end API created from scratch</p>
             </a>
           </div>
-
         </div>
       </section>
 

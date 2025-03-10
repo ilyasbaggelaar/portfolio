@@ -18,9 +18,11 @@ const Nav: React.FC = () => {
           scrolled ? "bg-green-500 text-white shadow-lg" : "bg-transparent"
         }`}
       >
+        <a href="#homePageProfile">
         <div className="text-4xl font-bold border-2 border-black px-2 py-1 mr-10">
           IB
         </div>
+        </a>
         <div className="flex items-center gap-x-16">
           {[
             {name: "Featured Work", link: "#featured-work" },
