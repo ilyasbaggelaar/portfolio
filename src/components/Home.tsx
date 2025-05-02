@@ -26,27 +26,27 @@ const Home: React.FC = () => {
       <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
         <div className="flex justify-center gap-6 mt-8">
-          <div className="bg-green-500 p-4 rounded-lg w-64">
+          <div className="bg-green-500 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://law-vely.netlify.app/">
-              <img src={LawvelyImg} className="h-[120px] rounded-b-[] w-full" />
+              <img src={LawvelyImg} className="h-[190px] rounded-b-[] w-full" />
               <h3 className="font-bold">Law-vely</h3>
               <p>Simplifying legislations through OpenAI's API</p>
             </a>
           </div>
 
-          <div className="bg-purple-400 p-4 rounded-lg w-64">
+          <div className="bg-purple-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://preeminent-rolypoly-17b3b1.netlify.app/">
-              <img src={ncNewsImg} className="h-[120px]" />
+              <img src={ncNewsImg} className="h-[190px]" />
               <h3 className="font-bold">NC-News Front-end</h3>
               <p>A news web app that provides user interactivity</p>
             </a>
           </div>
 
-          <div className="bg-blue-400 p-4 rounded-lg w-64">
+          <div className="bg-blue-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://nc-news-f67l.onrender.com/api/articles">
               <img
                 src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png"
-                className="h-[120px] rounded-b-none w-full"
+                className="h-[190px] rounded-b-none w-full"
               />
               <h3 className="font-bold">NC-News Back-end</h3>
               <p>A fully functional back-end API created from scratch</p>
