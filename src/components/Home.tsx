@@ -3,6 +3,7 @@ import ncNewsImg from "../assets/Images/ncnews.png";
 import LawvelyImg from "../assets/Images/Law-vely.png";
 import profilePictureImage from "../assets/Images/d396b836-6d3e-4b43-887b-47c0e66ad476.jpeg";
 import techStack from "./TechStackImages";
+import artify from "../assets/Images/artify.png";
 
 const Home: React.FC = () => {
   return (
@@ -26,6 +27,16 @@ const Home: React.FC = () => {
       <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
         <div className="flex justify-center gap-6 mt-8">
+          <div className="bg-indigo-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+            <a href="https://artifyexhibition.netlify.app/">
+              <img src={artify} className="h-[200px]" />
+              <h3 className="front-bold">Artify - Exhibition App</h3>
+              <p>
+                Web app with extensive art collections from different museum
+                API's
+              </p>
+            </a>
+          </div>
           <div className="bg-green-500 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://law-vely.netlify.app/">
               <img src={LawvelyImg} className="h-[200px] rounded-b-[] w-full" />
