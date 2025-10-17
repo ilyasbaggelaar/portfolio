@@ -4,6 +4,7 @@ import LawvelyImg from "../assets/Images/Law-vely.png";
 import profilePictureImage from "../assets/Images/d396b836-6d3e-4b43-887b-47c0e66ad476.jpeg";
 import techStack from "./TechStackImages";
 import artify from "../assets/Images/artify.png";
+import exe from "../assets/Images/unnamed.webp";
 
 const Home: React.FC = () => {
   return (
@@ -26,7 +27,16 @@ const Home: React.FC = () => {
       </section>
       <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
-        <div className="flex justify-center gap-6 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 px-5 md:px-5 lg:px-12">
+          <div className="bg-indigo-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+            <a href="https://play.google.com/store/apps/details?id=com.ibmobilegames.theexemobileedition">
+            <img src={exe} className="h-[200px]"/>
+            <h3>.EXE - Mobile Edition</h3>
+            <p>
+              The Exe - Mobile Edition, a mobile game available on Google Play
+            </p>
+            </a>
+          </div>
           <div className="bg-indigo-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://artifyexhibition.netlify.app/">
               <img src={artify} className="h-[200px]" />
