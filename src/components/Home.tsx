@@ -15,9 +15,9 @@ const Home: React.FC = () => {
           <img
             src={profilePictureImage}
             alt="profile"
-            className="w-85 h-85 rounded-full border-4 border-black shadow-lg object-cover object-top"
+            className="w-75 h-75 rounded-full border-4 border-black shadow-lg object-cover object-top"
           />
-          <div className="max-w-2xl px-5 mt-6 flex justify-center items-center">
+          <div className="max-w-5xl px-5 mt-6 flex justify-center items-center">
             <h1 className="text-5xl font-bold mt-4 text-center break-words">
               Hey, I'm <span className="text-green-500">Ilyas Baggelaar</span>.
               Here, you can check out what I'm working on. I try my best to
