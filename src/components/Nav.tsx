@@ -14,7 +14,7 @@ const Nav: React.FC = () => {
   return (
     <>
       <nav
-  className={`fixed top-0 left-0 w-full px-5 sm:px-10 py-4 flex items-center justify-between z-50 transition-all duration-300 ${
+  className={`fixed top-0 left-0 w-full px-5 sm:px-15 py-4 flex items-center justify-between z-50 transition-all duration-300 ${
     scrolled ? "bg-green-500 text-white shadow-lg" : "bg-transparent"
   }`}
 >

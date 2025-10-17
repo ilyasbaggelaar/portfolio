@@ -8,16 +8,17 @@ import exe from "../assets/Images/unnamed.webp";
 
 const Home: React.FC = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
+      {/* Home Section */}
       <section id="home">
-        <div className="max-w-full h-screen flex flex-col justify-center items-center bg-gray-200">
+        <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-200">
           <img
             src={profilePictureImage}
             alt="profile"
             className="w-85 h-85 rounded-full border-4 border-black shadow-lg object-cover object-top"
           />
-          <div className="max-w-240">
-            <h1 className="text-5xl font-bold mt-4 text-center line-clamp-5">
+          <div className="max-w-2xl px-5 mt-6 flex justify-center items-center">
+            <h1 className="text-5xl font-bold mt-4 text-center break-words">
               Hey, I'm <span className="text-green-500">Ilyas Baggelaar</span>.
               Here, you can check out what I'm working on. I try my best to
               create things with ❤️
@@ -25,62 +26,64 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Featured Work Section */}
       <section id="featured-work" className="bg-gray-900 text-white py-12">
         <h2 className="text-center text-3xl font-bold">Featured Work</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 px-5 md:px-5 lg:px-12">
-          <div className="bg-indigo-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+
+        {/* Responsive grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 px-5 md:px-8 lg:px-30 justify-items-center">
+          {/* Card */}
+          <div className="bg-indigo-400 p-4 rounded-lg w-full max-w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://play.google.com/store/apps/details?id=com.ibmobilegames.theexemobileedition">
-            <img src={exe} className="h-[200px]"/>
-            <h3>.EXE - Mobile Edition</h3>
-            <p>
-              The Exe - Mobile Edition, a mobile game available on Google Play
-            </p>
+              <img src={exe} className="h-[200px] w-full object-cover rounded-lg" />
+              <h3 className="font-bold mt-2">.EXE - Mobile Edition</h3>
+              <p>The Exe - Mobile Edition, a mobile game available on Google Play</p>
             </a>
           </div>
-          <div className="bg-indigo-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+
+          <div className="bg-indigo-400 p-4 rounded-lg w-full max-w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://artifyexhibition.netlify.app/">
-              <img src={artify} className="h-[200px]" />
-              <h3 className="front-bold">Artify - Exhibition App</h3>
-              <p>
-                Web app with extensive art collections from different museum
-                API's
-              </p>
+              <img src={artify} className="h-[200px] w-full object-cover rounded-lg" />
+              <h3 className="font-bold mt-2">Artify - Exhibition App</h3>
+              <p>Web app with extensive art collections from different museum API's</p>
             </a>
           </div>
-          <div className="bg-green-500 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+
+          <div className="bg-green-500 p-4 rounded-lg w-full max-w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://law-vely.netlify.app/">
-              <img src={LawvelyImg} className="h-[200px] rounded-b-[] w-full" />
-              <h3 className="font-bold">Law-vely</h3>
+              <img src={LawvelyImg} className="h-[200px] w-full object-cover rounded-lg" />
+              <h3 className="font-bold mt-2">Law-vely</h3>
               <p>Simplifying legislations through OpenAI's API</p>
             </a>
           </div>
 
-          <div className="bg-purple-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+          <div className="bg-purple-400 p-4 rounded-lg w-full max-w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://preeminent-rolypoly-17b3b1.netlify.app/">
-              <img src={ncNewsImg} className="h-[200px]" />
-              <h3 className="font-bold">NC-News Front-end</h3>
+              <img src={ncNewsImg} className="h-[200px] w-full object-cover rounded-lg" />
+              <h3 className="font-bold mt-2">NC-News Front-end</h3>
               <p>A news web app that provides user interactivity</p>
             </a>
           </div>
 
-          <div className="bg-blue-400 p-4 rounded-lg w-[350px] md:w-[400px] transition-transform duration-300 hover:-translate-y-2">
+          <div className="bg-blue-400 p-4 rounded-lg w-full max-w-[400px] transition-transform duration-300 hover:-translate-y-2">
             <a href="https://nc-news-f67l.onrender.com/api/articles">
               <img
                 src="https://community.retool.com/uploads/default/original/3X/3/9/391b836c2f6732b9493891120784fd099b249a6c.png"
-                className="h-[200px] rounded-b-none w-full"
+                className="h-[200px] w-full object-cover rounded-lg"
               />
-              <h3 className="font-bold">NC-News Back-end</h3>
+              <h3 className="font-bold mt-2">NC-News Back-end</h3>
               <p>A fully functional back-end API created from scratch</p>
             </a>
           </div>
         </div>
       </section>
 
-      {/* My Projects - Full Width */}
+      {/* Tech Stack Section */}
       <section id="tech-stack" className="w-full py-12 bg-gray-200">
         <h2 className="text-center text-4xl font-bold mb-8">Tech stack</h2>
         <div className="flex justify-center">
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-13 gap-6 mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-12 gap-6 mx-auto">
             {techStack.map((tech) => (
               <div
                 key={tech.name}
